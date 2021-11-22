@@ -24,7 +24,7 @@ public class Reptil extends Animal{
 	
 	public Reptil() {}
 	
-	public static int cantidadReptiles() {return iguanas + serpientes;}
+	public static int cantidadReptiles() {return listado.size();}
 	
 	@Override
 	public String movimiento() {return "reptar";}

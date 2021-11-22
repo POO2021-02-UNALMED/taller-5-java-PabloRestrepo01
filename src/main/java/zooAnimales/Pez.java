@@ -24,7 +24,7 @@ public class Pez extends Animal{
 	
 	public Pez() {}
 	
-	public static int cantidadPeces() {return salmones + bacalaos;}
+	public static int cantidadPeces() {return listado.size();}
 	
 	@Override
 	public String movimiento() {return "nadar";}

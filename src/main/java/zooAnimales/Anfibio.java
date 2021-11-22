@@ -23,7 +23,7 @@ public class Anfibio extends Animal {
 	
 	public Anfibio() {}
 	
-	public static int cantidadAnfibios() {return ranas + salamandras;}
+	public static int cantidadAnfibios() {return listado.size();}
 	
 	@Override
 	public String movimiento() {return "saltar";}
