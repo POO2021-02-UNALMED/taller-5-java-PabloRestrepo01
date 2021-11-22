@@ -30,7 +30,7 @@ public class Animal {
 	}
 	
 	public String toString() {
-		String retorno = "Mi nombre es " + nombre + ", tengo una edad de " + edad + ", habito en " + habitat + "y mi genero es "
+		String retorno = "Mi nombre es " + nombre + ", tengo una edad de " + edad + ", habito en " + habitat + " y mi genero es "
 				+ genero;
 		
 		if(zona != null) {
