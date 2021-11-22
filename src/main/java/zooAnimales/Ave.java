@@ -17,6 +17,7 @@ public class Ave extends Animal{
 		this.edad = edad;
 		this.habitat = habitat;
 		this.genero = genero;
+		this.colorPlumas = colorPlumas;
 	}
 	
 	public Ave() {}
