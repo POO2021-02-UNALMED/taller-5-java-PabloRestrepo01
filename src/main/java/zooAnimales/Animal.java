@@ -22,11 +22,11 @@ public class Animal {
 	public String movimiento() {return "desplazarse";}
 	
 	public static String totalPorTipo() {
-		return "Mamiferos: " + Mamifero.cantidadMamiferos() +"\n"
+		return ("Mamiferos: " + Mamifero.cantidadMamiferos() +"\n"
 		+ "Aves: " +Ave.cantidadAves() + "\n"
 		+"Reptiles: "+Reptil.cantidadReptiles() +"\n"
 		+ "Peces: "+Pez.cantidadPeces() +"\n"
-		+"Anfibios: "+Anfibio.cantidadAnfibios();
+		+"Anfibios: "+Anfibio.cantidadAnfibios());
 	}
 	
 	public String toString() {
