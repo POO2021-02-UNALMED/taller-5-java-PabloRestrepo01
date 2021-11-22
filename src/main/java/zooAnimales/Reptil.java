@@ -29,12 +29,12 @@ public class Reptil extends Animal{
 	@Override
 	public String movimiento() {return "reptar";}
 	
-	public static Reptil crearIguanas(String nombre, int edad, String genero) {
+	public static Reptil crearIguana(String nombre, int edad, String genero) {
 		iguanas++;
 		return new Reptil(nombre, edad, "humedal", genero, "verdes", 3);
 	}
 	
-	public static Reptil crearSerpientes(String nombre, int edad, String genero) {
+	public static Reptil crearSerpiente(String nombre, int edad, String genero) {
 		serpientes++;
 		return new Reptil(nombre, edad, "jungla", genero, "blanco", 1);
 	}
