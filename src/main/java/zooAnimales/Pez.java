@@ -6,8 +6,8 @@ import java.util.ArrayList;
 
 public class Pez extends Animal{
 	private static ArrayList<Pez> listado = new ArrayList<Pez>();
-	private static int salmones = 0;
-	private static int bacalaos = 0;
+	static int salmones = 0;
+	static int bacalaos = 0;
 	private String colorEscamas;
 	private int cantidadAletas;
 	
