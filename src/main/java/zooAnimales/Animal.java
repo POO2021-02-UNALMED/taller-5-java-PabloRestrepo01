@@ -9,20 +9,22 @@ public class Animal {
 	protected String genero;
 	protected Zona zona;
 	
-	public Animal(String nombre, int edad, String habitat, String genero, Zona zona) {
+	public Animal(String nombre, int edad, String habitat, String genero) {
 		totalAnimales++;
 		this.nombre = nombre;
 		this.edad = edad;
 		this.habitat = habitat;
 		this.genero = genero;
-		this.zona = zona;
 	}
 	
 	public Animal() {}
 	
 	public String movimiento() {return "desplazarse";}
 	
-	public static String totalPorTipo() {return "";}
+	public static String totalPorTipo() {
+		return "Mamiferos: " + Mamifero.cantidadMamiferos() + "\nAves: " +Ave.cantidadAves() +"\nReptiles: "+Reptil.cantidadReptiles()
+				+ "Peces: "+Pez.cantidadPeces()+"Anfibios: "+Anfibio.cantidadAnfibios();
+	}
 	
 	public String toString() {
 		String retorno = "Mi nombre es " + nombre + ", tengo una edad de " + edad + ", habito en " + habitat + "y mi genero es "
@@ -73,13 +75,5 @@ public class Animal {
 
 	public void setGenero(String genero) {
 		this.genero = genero;
-	}
-
-	public Zona getZona() {
-		return zona;
-	}
-
-	public void setZona(Zona zona) {
-		this.zona = zona;
 	}
 }
