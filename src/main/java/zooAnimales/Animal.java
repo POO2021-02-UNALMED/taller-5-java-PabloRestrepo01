@@ -17,7 +17,9 @@ public class Animal {
 		this.genero = genero;
 	}
 	
-	public Animal() {}
+	public Animal() {
+		totalAnimales++;
+	}
 	
 	public String movimiento() {return "desplazarse";}
 	

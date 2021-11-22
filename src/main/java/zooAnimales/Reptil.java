@@ -22,7 +22,10 @@ public class Reptil extends Animal{
 		this.largoCola = largoCola;
 	}
 	
-	public Reptil() {}
+	public Reptil() {
+		totalAnimales++;
+		listado.add(this);
+	}
 	
 	public static int cantidadReptiles() {return listado.size();}
 	

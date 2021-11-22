@@ -20,7 +20,10 @@ public class Ave extends Animal{
 		this.colorPlumas = colorPlumas;
 	}
 	
-	public Ave() {}
+	public Ave() {
+		totalAnimales++;
+		listado.add(this);
+	}
 	
 	public static int cantidadAves() {return listado.size();}
 	
